@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('nav ul li a').click(function(e) {
+        e.preventDefault();
+        var pageUrl = $(this).attr('href');
+        $('#content').load(pageUrl);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li class="grado has-submenu">
+              <a href="#">Primero</a>
+              <ul>
+                <li><a href="Cursos/PRIMERO-A-Actividades-Estudiantes.html">Primero A</a></li>
+                <li><a href="Cursos/PRIMERO-B-Actividades-Estudiantes.html">Primero B</a></li>
+                <li><a href="Cursos/PRIMERO-C-Actividades-Estudiantes.html">Primero C</a></li>
+              </ul>
+            </li>
+            <li class="grado has-submenu">
+              <a href="#">Segundo</a>
+              <ul>
+                <li><a href="Cursos/SEGUNDO-A-Actividades-Estudiantes.html">Segundo A</a></li>
+                <li><a href="Cursos/SEGUNDO-B-Actividades-Estudiantes.html">Segundo B</a></li>
+                <li><a href="Cursos/SEGUNDO-C-Actividades-Estudiantes.html">Segundo C</a></li>
+              </ul>
+            </li>
+            <li class="grado has-submenu">
+              <a href="#">Tercero</a>
+              <ul>
+                <li><a href="Cursos/TERCERO-A-Actividades-Estudiantes.html">Tercero A</a></li>
+                <li><a href="Cursos/TERCERO-B-Actividades-Estudiantes.html">Tercero B</a></li>
+                <li><a href="Cursos/TERCERO-C-Actividades-Estudiantes.html">Tercero C</a></li>
+              </ul>
+            </li>
+            <li class="grado has-submenu">
+              <a href="#">Cuarto</a>
+              <ul>
+                <li><a href="Cursos/CUARTO-A-Actividades-Estudiantes.html">Cuarto A</a></li>
+                <li><a href="Cursos/CUARTO-B-Actividades-Estudiantes.html">Cuarto B</a></li>
+                <li><a href="Cursos/CUARTO-C-Actividades-Estudiantes.html">Cuarto C</a></li>
+              </ul>
+            </li>
+            <li class="grado has-submenu">
+              <a href="#">Quinto</a>
+              <ul>
+                <li><a href="Cursos/QUINTO-A-Actividades-Estudiantes.html">Quinto A</a></li>
+                <li><a href="Cursos/QUINTO-B-Actividades-Estudiantes.html">Quinto B</a></li>
+                <li><a href="Cursos/QUINTO-C-Actividades-Estudiantes.html">Quinto C</a></li>
+              </ul>
+            </li>
+            <li class="grado has-submenu">
+              <a href="#">Sexto</a>
+              <ul>
+                <li><a href="Cursos/SEXTO-A-Actividades-Estudiantes.html">Sexto A</a></li>
+                <li><a href="Cursos/SEXTO-B-Actividades-Estudiantes.html">Sexto B</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header">
+      <!-- Coloca aquí tu imagen o contenido de la parte superior -->
+    </div>
+    <div class="content">
+      <div id="content">
+        <!-- El contenido de la página inicial se mostrará aquí -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
